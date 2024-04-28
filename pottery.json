@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Porcelain Tea Set",
+      "subCategory": "Porcelain",
+      "description": "Delicate porcelain tea set with intricate floral patterns, ideal for tea lovers and special occasions.",
+      "price": "$12",
+      "image": "https://i.ibb.co/c6J4JpL/card1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Stoneware set",
+      "subCategory": "Stoneware",
+      "description": "Elegant stoneware set with a matte finish, perfect  as a standalone decor piece.",
+      "price": "$10",
+      "image": "https://i.ibb.co/r4HF3yV/card6.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Flower mug",
+      "subCategory": "Clay-made pottery ",
+      "description": "Handcrafted pottery made from locally sourced clay, featuring unique designs and glazes. ",
+      "price": "$6",
+      "image": "https://i.ibb.co/zP3K6pG/card3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Terra Cotta Planters",
+      "subCategory": "Terra Cotta",
+      "description": "Set of rustic terra cotta planters perfect for adding a touch of Mediterranean charm to your garden or indoor space.",
+      "price": "$15",
+      "image": "https://i.ibb.co/9NmyXQN/chris-liverani-icu-CJl-KLOng-unsplash.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Architectural Ceramic set",
+      "subCategory": "Ceramics & Architectural",
+      "description": "Hand-painted ceramic set suitable for kitchens.",
+      "price": "$7",
+      "image": "https://i.ibb.co/88w1pbw/card4.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Home Decor Set",
+      "subCategory": "Home decor pottery",
+      "description": "Set of decorative pottery items including bowls perfect for enhancing your home decor.",
+      "price": "$12",
+      "image": "https://i.ibb.co/zbt54zj/card2.jpg"
+    }
+  ]
+  
