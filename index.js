@@ -12,13 +12,11 @@ const port = process.env.PORT || 5000;
 app.use(express.json())
 app.use(cors())
 
-// YGP2m7oUgwoSzlZX
-// craft_shop 
 console.log(process.env.DB_USER);
 
 
 
-const uri = "mongodb+srv://<username>:<password>@cluster0.wal4hcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.wal4hcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -33,6 +31,30 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
+
+    const craftCollection = client.db('craftDB').collection('craftProduct');
+
+
+    app.get('/addProduct', async(req, res)=>{
+      const cursor = craftCollection.find();
+      const result = await cursor.toArray();
+      res.send(result)
+    })
+    app.post('/addProduct', async(req, res)=>{
+      const newProduct = req.body;
+      console.log(newProduct);
+      const result = await craftCollection.insertOne(newProduct);
+      res.send(result)
+    })
+
+
+
+
+
+
+
+
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
@@ -54,7 +76,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello')
   })
 app.get('/items', (req, res) => {
     res.send(items)

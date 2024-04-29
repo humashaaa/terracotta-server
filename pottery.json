@@ -1,51 +1,73 @@
 [
-    {
-      "id": 1,
-      "title": "Porcelain Tea Set",
-      "subCategory": "Porcelain",
-      "description": "Delicate porcelain tea set with intricate floral patterns, ideal for tea lovers and special occasions.",
-      "price": "$12",
-      "image": "https://i.ibb.co/c6J4JpL/card1.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Stoneware set",
-      "subCategory": "Stoneware",
-      "description": "Elegant stoneware set with a matte finish, perfect  as a standalone decor piece.",
-      "price": "$10",
-      "image": "https://i.ibb.co/r4HF3yV/card6.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Flower mug",
-      "subCategory": "Clay-made pottery ",
-      "description": "Handcrafted pottery made from locally sourced clay, featuring unique designs and glazes. ",
-      "price": "$6",
-      "image": "https://i.ibb.co/zP3K6pG/card3.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Terra Cotta Planters",
-      "subCategory": "Terra Cotta",
-      "description": "Set of rustic terra cotta planters perfect for adding a touch of Mediterranean charm to your garden or indoor space.",
-      "price": "$15",
-      "image": "https://i.ibb.co/9NmyXQN/chris-liverani-icu-CJl-KLOng-unsplash.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Architectural Ceramic set",
-      "subCategory": "Ceramics & Architectural",
-      "description": "Hand-painted ceramic set suitable for kitchens.",
-      "price": "$7",
-      "image": "https://i.ibb.co/88w1pbw/card4.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Home Decor Set",
-      "subCategory": "Home decor pottery",
-      "description": "Set of decorative pottery items including bowls perfect for enhancing your home decor.",
-      "price": "$12",
-      "image": "https://i.ibb.co/zbt54zj/card2.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Porcelain Tea Set",
+    "subCategory": "Porcelain",
+    "description": "Delicate porcelain tea set with intricate floral patterns, ideal for tea lovers and special occasions.",
+    "price": "$12",
+    "image": "https://i.ibb.co/c6J4JpL/card1.jpg",
+    "material": "Porcelain",
+    "includes": "Includes teapot, cups, and saucers for a complete tea experience.",
+    "dimensions": "Teapot: 800ml, Cups: 200ml",
+    "careInstructions": "Hand wash recommended to preserve the delicate hand-painted designs."
+  },
+  {
+    "id": 2,
+    "title": "Stoneware set",
+    "subCategory": "Stoneware",
+    "description": "Elegant stoneware set with a matte finish, perfect  as a standalone decor piece.",
+    "price": "$10",
+    "image": "https://i.ibb.co/r4HF3yV/card6.jpg",
+    "material": "Stoneware",
+    "includes": "Set of 4 plates and 4 bowls.",
+    "dimensions": "Plates: 10 inches, Bowls: 6 inches",
+    "careInstructions": "Microwave and dishwasher safe for convenient use."
+  },
+  {
+    "id": 3,
+    "title": "Flower mug",
+    "subCategory": "Clay-made pottery",
+    "description": "Handcrafted pottery made from locally sourced clay, featuring unique designs and glazes.",
+    "price": "$6",
+    "image": "https://i.ibb.co/zP3K6pG/card3.jpg",
+    "material": "Clay-made pottery",
+    "dimensions": "Height: 4 inches, Diameter: 3 inches",
+    "careInstructions": "Hand wash recommended to preserve the unique glazes."
+  },
+  {
+    "id": 4,
+    "title": "Terra Cotta Planters",
+    "subCategory": "Terra Cotta",
+    "description": "Set of rustic terra cotta planters perfect for adding a touch of Mediterranean charm to your garden or indoor space.",
+    "price": "$15",
+    "image": "https://i.ibb.co/9NmyXQN/chris-liverani-icu-CJl-KLOng-unsplash.jpg",
+    "material": "Terra Cotta",
+    "includes": "Set of 3 planters in different sizes.",
+    "dimensions": "Small: 6 inches, Medium: 8 inches, Large: 10 inches",
+    "careInstructions": "Suitable for indoor and outdoor use. Drainage holes included."
+  },
+  {
+    "id": 5,
+    "title": "Architectural Ceramic set",
+    "subCategory": "Ceramics & Architectural",
+    "description": "Hand-painted ceramic set suitable for kitchens.",
+    "price": "$7",
+    "image": "https://i.ibb.co/88w1pbw/card4.jpg",
+    "material": "Ceramics",
+    "includes": "Set of 3 kitchen canisters with lids.",
+    "dimensions": "Canister 1: 8 inches tall, Canister 2: 7 inches tall, Canister 3: 6 inches tall",
+    "careInstructions": "Hand wash recommended for longevity."
+  },
+  {
+    "id": 6,
+    "title": "Home Decor Set",
+    "subCategory": "Home decor pottery",
+    "description": "Set of decorative pottery items including bowls perfect for enhancing your home decor.",
+    "price": "$12",
+    "image": "https://i.ibb.co/zbt54zj/card2.jpg",
+    "material": "Pottery",
+    "includes": "Set of 2 decorative bowls.",
+    "dimensions": "Large Bowl: 10 inches diameter, Small Bowl: 8 inches diameter",
+    "careInstructions": "Decorative use only. Not suitable for food consumption."
+  }
+]
