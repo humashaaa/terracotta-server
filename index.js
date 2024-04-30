@@ -40,6 +40,20 @@ async function run() {
       const result = await cursor.toArray();
       res.send(result)
     })
+
+
+    // app.get('/myProduct/:email', async(req, res)=>{
+    //   const result = await craftCollection.find({email:req.params.email}).toArray()
+    //   res.send(result)
+    //   console.log(req.params.email);
+    // })
+    app.get("/myProduct/:email", async (req, res) => {
+      console.log(req.params.email);
+      const result = await craftCollection.find({ userEmail: req.params. email }).toArray();
+      res.send(result)
+    })
+
+
     app.post('/addProduct', async(req, res)=>{
       const newProduct = req.body;
       console.log(newProduct);
