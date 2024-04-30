@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const express = require('express');
 const cors = require('cors');
@@ -41,12 +41,6 @@ async function run() {
       res.send(result)
     })
 
-
-    // app.get('/myProduct/:email', async(req, res)=>{
-    //   const result = await craftCollection.find({email:req.params.email}).toArray()
-    //   res.send(result)
-    //   console.log(req.params.email);
-    // })
     app.get("/myProduct/:email", async (req, res) => {
       console.log(req.params.email);
       const result = await craftCollection.find({ userEmail: req.params. email }).toArray();
@@ -60,6 +54,51 @@ async function run() {
       const result = await craftCollection.insertOne(newProduct);
       res.send(result)
     })
+
+
+    app.put('/item/:id', async(req, res) => {
+      const id = req.params.id;
+      const filter = {_id: new ObjectId(id)}
+      const options = { upsert: true };
+      const updatedItem = req.body;
+
+      const product = {
+
+        // name,
+        // subcategory,
+        // description,
+        // price,
+        // rating,
+        // customization,
+        // processingTime,
+        // stockStatus,
+        // photo
+
+
+          $set: {
+              name: updatedItem.name, 
+              subcategory: updatedItem.subcategory, 
+              description: updatedItem.description, 
+              price: updatedItem.price, 
+              rating: updatedItem.rating, 
+              customization: updatedItem.customization, 
+              processingTime: updatedItem.processingTime, 
+              stockStatus: updatedItem.stockStatus, 
+              photo: updatedItem.photo
+          }
+      }
+
+      const result = await coffeeCollection.updateOne(filter, product, options);
+      res.send(result);
+  })
+
+
+  app.delete('/item/:id', async (req, res) => {
+    const id = req.params.id;
+    const query = { _id: new ObjectId(id) }
+    const result = await craftCollection.deleteOne(query);
+    res.send(result);
+})
 
 
 
